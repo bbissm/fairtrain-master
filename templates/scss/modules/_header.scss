@@ -1,0 +1,36 @@
+.header-content{
+	height:100%;
+	.header-img{
+		.header-container{
+			
+		}
+		div{
+			// min-height:43vh;
+			height: 100%;
+			// background-position: center center;
+			background-position: top;
+			background-repeat: no-repeat;	
+			background-size: cover;
+		    > .overlay{
+		    
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,f1ede6+100&0+30,0.65+100 */
+				background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(72,71,69,0) 30%, rgba(241,237,230,0.65) 100%); /* FF3.6-15 */
+				background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(72,71,69,0) 30%,rgba(241,237,230,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+				background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(72,71,69,0) 30%,rgba(241,237,230,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6f1ede6',GradientType=0 ); /* IE6-9 */
+				display:flex;
+				justify-content:center;
+				h1{
+						display: flex;
+    				align-items: flex-end;
+						margin-bottom: 80px;
+						justify-content: center;
+						max-width: 1600px;
+						@media screen and (max-width: $breakpoint-sm) {
+							font-size:32px;
+						}
+				}
+			}
+		}
+	}
+}

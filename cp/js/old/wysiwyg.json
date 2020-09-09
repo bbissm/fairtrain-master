@@ -1,0 +1,86 @@
+{
+	"menus": [
+		{
+			"command": "formatblock",
+			"header": "Format",
+			"values": {
+				"h1": "Title 1",
+				"h2": "Title 2",
+				"h3": "Title 3",
+				"p": "Paragraph",
+				"blockquote": "Infobox" 
+			}
+		}
+	],
+	"buttons" : [
+		{ 
+			"text": "Undo",
+			"command": "undo",
+			"image": "\/cp\/css\/icons\/undo.png"
+		}, {
+			"text": "Redo",
+			"command": "redo",
+			"image": "\/cp\/css\/icons\/redo.png"
+		}, {
+			"text": "Remove formatting",
+			"command": "removeFormat",
+			"image": "\/cp\/css\/icons\/format.png"
+		}, {
+			"text": "Clear Format",
+			"command": "clearFormat",
+			"image": "\/cp\/css\/icons\/clearFormat.png"
+		},  {
+			"text": "Bold",
+			"command": "bold",
+			"image": "\/cp\/css\/icons\/bold.png"
+		}, {
+			"text": "Italic",
+			"command": "italic",
+			"image": "\/cp\/css\/icons\/italic.png"
+		}, {
+			"text": "Underline",
+			"command": "underline",
+			"image": "\/cp\/css\/icons\/underline.png"
+		}, {
+			"text": "Left align",
+			"command": "justifyleft",
+			"image": "\/cp\/css\/icons\/justifyleft.png"
+		}, {
+			"text": "Center align",
+			"command": "justifycenter",
+			"image": "\/cp\/css\/icons\/justifycenter.png"
+		}, {
+			"text": "Right align",
+			"command": "justifyright",
+			"image": "\/cp\/css\/icons\/justifyright.png"
+		}, {
+			"text": "Bild einfügen",
+			"command": "createImage",
+			"image": "\/cp\/css\/icons\/image.png"
+		}, {
+			"text": "Numbered list",
+			"command": "insertorderedlist",
+			"image": "\/cp\/css\/icons\/numberedlist.png"
+		}, {
+			"text": "Dotted list",
+			"command": "insertunorderedlist",
+			"image": "\/cp\/css\/icons\/dottedlist.png"
+		}, {
+			"text": "Delete indentation",
+			"command": "outdent",
+			"image": "\/cp\/css\/icons\/outdent.png"
+		}, {
+			"text": "Add indentation",
+			"command": "indent",
+			"image": "\/cp\/css\/icons\/indent.png"
+		}, {
+			"text": "Hyperlink",
+			"command": "createLink",
+			"image": "\/cp\/css\/icons\/hyperlink.png"
+		}, {
+			"text": "Unlink",
+			"command": "unlink",
+			"image": "\/cp\/css\/icons\/unlink.png"
+		}
+	] 
+}

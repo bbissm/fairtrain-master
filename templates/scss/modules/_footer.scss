@@ -1,0 +1,37 @@
+footer{
+	color:white;
+	padding: 30px 0;
+	width:100%;
+	.article_footer{
+		align-items: center;
+		display:flex;
+		text-align:center;
+		flex-direction:column;
+		
+		img{
+		margin-top:20px;
+			width:100px;
+		}
+		> p{
+			color:white !important;
+		    flex-direction: column;
+		    margin-top:20px;
+		    line-height:1.5em;
+		    text-align: center;
+			font-size:1em;
+			strong{
+				color:white;
+			}
+		}
+		> p:last-of-type{
+			margin-bottom:40px;
+			width: 300px;
+			justify-content: space-between;
+		}
+		> a{
+			text-decoration: none !important;
+			color:white !important;
+			    flex-direction: column;
+		}
+	}
+}

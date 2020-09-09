@@ -1,0 +1,285 @@
+container {
+	display: block;
+	padding:0px;
+	margin: 0px;
+	border:0px;
+	width: 100%;
+
+	&.draging {
+		-webkit-user-select: none !important;  /* Chrome all / Safari all */
+		-moz-user-select: none !important;     /* Firefox all */
+		-ms-user-select: none !important;      /* IE 10+ */ 
+		user-select: none !important;
+
+		* {
+			-webkit-user-select: none !important;  /* Chrome all / Safari all */
+			-moz-user-select: none !important;     /* Firefox all */
+			-ms-user-select: none !important;      /* IE 10+ */
+			user-select: none !important;
+		}
+	}
+
+	*[cms=true] {
+		position:relative;
+		box-sizing: border-box; 
+		border:0px solid transparent; 
+  
+		&:hover { 
+			border:1px solid #000;
+		}
+
+		.move {
+			padding:0px !important;
+			margin: 0px !important;
+			display: block;
+			background-size: 16px;
+			background-image: url(../img/move.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			width: 36px !important;
+			height: 36px !important;
+			border: 1px solid rgba(0,0,0,0.1) !important;
+			border-top:0px;
+			border-right:0px; 
+			background-color: #FFFFFF;
+			position: absolute;
+			right: 36px !important;
+			top: 0px !important;
+			box-sizing: border-box;
+			cursor: pointer;
+			min-width: auto !important;
+			max-width: auto !important;
+			display: block !important;
+			z-index: 1000 !important;
+		} 
+
+		.controls {
+			padding:0px !important;
+			margin: 0px !important;
+			display: block;
+			background-size: 16px;
+			background-image: url(../img/config.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			width: 36px !important;
+			height: 36px !important;
+			border: 1px solid rgba(0,0,0,0.1) !important;
+			border-top:0px;
+			border-right:0px; 
+			background-color: #FFFFFF;
+			position: absolute;
+			right: 0px !important;
+			top: 0px !important;
+			box-sizing: border-box;
+			min-width: auto !important;
+			max-width: auto !important;
+			display: block !important;
+			z-index: 1000 !important;
+			
+			ul {
+				position: absolute;
+				top:100%;
+				right: -1px;
+				display: none;
+				list-style: none !important;
+				padding:0px !important;
+				margin:0px !important;
+				border:1px solid rgba(0,0,0,0.1) !important;
+				z-index: 2;
+				min-width: auto !important;
+				max-width: auto !important;
+
+				li {
+					padding: 5px 10px !important;
+					background-color: #FFF !important;
+					border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+					margin:0px !important; 
+
+					&:before {
+						display:none !important;
+					}
+
+					a {
+						color: #0080d2;
+						font-family: 'CenturyGothic' !important;
+						font-size: 12px;
+
+						&:hover {
+							color: #000;
+						}
+					}
+
+					&:last-of-type {
+						border-bottom: 0px;
+					}
+				}
+			}
+
+			&.active {
+				ul {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+container-control {
+	margin:0px !important; 
+	padding:10px !important;
+	background-color: #000;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+	text-align: left;
+	display: block !important;
+	min-width: auto !important;
+	max-width: auto !important;
+	border-radius: 0px;   
+  
+	> div {
+		background-color: #000000;
+		padding:2px 5px;
+		color: #FFFFFF;
+		font-family: 'CenturyGothic';
+		font-size: 12px;
+		display: inline-block;
+		margin-right: 5px;
+
+		@media(max-width: 767px) {
+			color: transparent;
+		}
+	}
+
+	button.container-button {
+		display: inline-block !important;
+		padding: 2px 5px !important;
+		background: #0080d2;
+		background: -webkit-linear-gradient(#00cdff,#0080d2);
+		background: -o-linear-gradient(#00cdff,#0080d2);
+		background: -moz-linear-gradient(#00cdff,#0080d2);
+		background: linear-gradient(#00cdff,#0080d2);
+		margin:0px !important;
+		color: #FFF !important;
+		margin-right: 5px !important;
+		font-family: 'CenturyGothic';
+		font-size: 12px;
+		border:0px !important;
+		width: auto !important;
+		min-width: auto !important;
+		max-width: auto !important;
+		border-radius: 3px !important;
+		transition:0s none !important;
+
+		&:hover {
+			color: #FFF !important;
+			transition:0s none !important;
+		}
+
+		@media(max-width: 767px) {
+			display: none !important;
+		}
+	} 
+} 
+
+#contextmenu {
+	position: absolute;
+	background-color: transparent;
+	border:0px;
+	border-radius: 3px;
+	background-color: #EEE; 
+	display: none;
+	z-index: 1000;
+
+	ul {
+		list-style: none;
+		padding:0px;
+		margin: 0px;
+		border:1px solid #AAA;
+		border-radius: 3px;
+		background-color: #FFF; 
+		box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); 
+		margin-bottom: 5px;
+
+		&:last-of-type {
+			margin-bottom:0px;
+		}
+
+		li {
+			position:relative;
+			margin:0px;
+			padding:5px 10px;
+			list-style: none;
+			border:0px;
+			max-width: auto;
+			max-height: auto;
+			height: auto;
+			border-bottom: 1px solid #AAA;
+			background-color: #FFF;
+			font-family: 'CenturyGothic';
+			font-size: 12px; 
+			cursor: default;
+			padding-right:62px !important;
+
+			.ctxup,
+			.ctxdown {
+				position:absolute;
+				top:0px;
+				right:0px;
+				border-left: 1px solid #AAA;
+				padding:0px;
+				width: 25px;
+				height:25px;
+				background-image:url(../img/arrow-down-content.png);
+				background-repeat:no-repeat;
+				background-size:40%;
+				background-position: center center;
+				cursor:pointer;
+
+				&:hover {
+					background-color: #EEE;
+				}
+			}
+
+			.ctxup {
+				right:26px;
+				background-image:url(../img/arrow-up-content.png);
+			}
+
+			&:last-of-type {
+				border-bottom: 0px;
+			}
+		}
+	}
+}
+
+.editfiller {
+	position:relative;
+	width:100%;
+	min-height:100px;
+	height:100%;
+	display: block !important; 
+
+	.editbutton {
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		padding: 2px 5px !important;
+		background: #0080d2;
+		background: -webkit-linear-gradient(#00cdff, #0080d2);
+		background: -o-linear-gradient(#00cdff, #0080d2);
+		background: -moz-linear-gradient(#00cdff, #0080d2);
+		background: linear-gradient(#00cdff, #0080d2);
+		margin: 0px !important;
+		color: #FFF !important;
+		margin-right: 5px !important;
+		font-family: 'CenturyGothic';
+		font-size: 12px;
+		border: 0px !important;
+		width: auto !important;
+		min-width: auto !important;
+		max-width: auto !important;
+		border-radius: 3px !important;
+		transition: 0s none !important;
+		text-decoration:none;
+	}
+} 

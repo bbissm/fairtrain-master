@@ -1,0 +1,458 @@
+.kursdetails {
+	max-width: 1550px;
+	margin: 0 auto;
+	justify-content: center;
+	width: calc(100% - 40px);
+	margin-bottom: 75px;
+	@media screen and (max-width: $breakpoint-md) {
+		margin-bottom:20px;
+		flex-direction: column;
+	}
+	@media screen and (max-width: $breakpoint-sm) {
+		width: 100%;
+	}
+	>h2 {
+		justify-content: flex-start;
+		display: flex;
+		margin-bottom: 30px;
+		@media screen and (max-width: $breakpoint-md) {
+			display: flex;
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+	}
+	>.row {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+		@media screen and (max-width: $breakpoint-md) {
+			flex-direction:column;
+		}
+		>div.content {
+			@media screen and (max-width: $breakpoint-sm) {
+				width: calc(100% - 40px);
+			}
+			max-width: 910px;
+			margin-right:100px;
+			@media screen and (max-width: $breakpoint-md) {
+				margin: 0 auto;
+				padding-bottom: 40px;
+			}
+			p {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		>aside {
+			max-width: 500px;
+			width: calc(100% - 80px);
+			@media screen and (max-width: $breakpoint-md) {
+				width:100%;
+			}
+		}
+	}
+}
+.course_date {
+	text-align: center;
+	width: 25%;
+	align-items: center;
+	display: flex;
+	align-items: flex-start;
+	min-width:320px;
+	@media screen and (max-width: $breakpoint-md) {
+		width:100%;
+		margin: 0 auto;
+	}
+	table {
+		word-break: normal;
+		width: 100%;
+		table-layout: auto;
+		th {
+			padding: 0 20px;
+		}
+		tr {
+			font-family: BrandonText;
+			padding: 10px;
+			color: #634E42;
+			vertical-align: top;
+			display: flex;
+			th {
+				h3 {
+					font-size: 2.3em;
+					margin: 20px 0 10px 0;
+				}
+			}
+			td {
+				padding: 10px;
+				display: flex;
+				flex-direction: column;
+				>p {
+					@media screen and (max-width: $breakpoint-md) {
+						align-self:center;
+					}
+				}
+				>bold {
+					font-size: 1.3em;
+					@media screen and (max-width: $breakpoint-md) {
+						align-self:center;
+					}
+				}
+			}
+			td:nth-child(odd) {
+				width: calc(100% - 100px);
+				align-items: flex-end;
+				max-width: 150px;
+			}
+			td:nth-child(even) {
+				width: calc(100% - 20px);
+				align-items: flex-start;
+			}
+		}
+		tr:first-of-type {
+			text-align: left;
+			@media screen and (max-width: $breakpoint-md) {
+				display: flex;
+				justify-content: center;
+			}
+		}
+		tr:nth-child(even) {
+			background-color: #E7E0D3;
+		}
+		tr:nth-child(odd) {
+			background-color: #F1EDE6;
+		}
+	}
+}
+.kurs_details:first-of-type {
+	margin-top: 75px;
+	@media screen and (max-width: $breakpoint-sm) {
+		margin-top: 30px;
+	}
+}
+.kurs_details {
+	// margin-bottom: 60px;
+	max-width: unset;
+	padding-bottom: 75px;
+	@media screen and (max-width: $breakpoint-sm) {
+		padding-bottom: 30px;
+	}
+	>.centered {
+		@media screen and (max-width: $breakpoint-sm) {
+			// padding-bottom: calc(100% - 40px);
+		}
+		h2 {}
+	}
+}
+.kurs_details_section {
+	padding-bottom: 75px;
+	@media screen and (max-width: $breakpoint-sm) {
+		padding-bottom:30px;
+	}
+	>.centered {
+		@media screen and (max-width: $breakpoint-sm) {
+			padding-bottom: calc(100% - 40px);
+		}
+		h2 {}
+	}
+}
+.kurs_details_table {
+	display: flex;
+	justify-content: center;
+	tr {
+		padding: 10px;
+		border-top: #CBBB9F 1px solid;
+		display: flex;
+		@media screen and (max-width: $breakpoint-sm) {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		td {
+			margin: 0 20px;
+			@media screen and (max-width: $breakpoint-md) {
+				width: calc(100% - 40px) !important;
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				justify-content: center !important;
+			}
+		}
+		td:nth-child(odd) {
+			width: calc(30% - 40px);
+			display: flex;
+			justify-content: flex-end;
+			@media screen and (max-width: $breakpoint-md) {
+				text-align: right;
+			}
+		}
+		td:nth-child(even) {
+			width: calc(70% - 40px);
+			display: flex;
+			justify-content: flex-start;
+		}
+		/*td {
+			// padding: 0 33px;
+			display: flex;
+			flex-direction: column;
+			p {
+				// font-size:1.1em;
+				justify-content: flex-end;
+				@media screen and (max-width: $breakpoint-sm) {
+					text-align: center;
+				}
+			}
+			@media screen and (max-width: $breakpoint-md) {
+				width: 100% !important;
+				align-items: center;
+			}
+		}
+		td:nth-child(even) {
+			// width:70%;
+			width: calc(70% - 20px) !important;
+			padding-left: 0;
+			p {
+				justify-content: flex-start;
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				width: 100% !important;
+				margin-bottom: 20px;
+			}
+		}
+		td:nth-of-type(1) {
+			// width:30%;
+			width: calc(30% - 5px) !important;
+			p {
+				// font-size:1.1em;
+			}
+			div {
+				display: flex;
+				justify-content: flex-end;
+				strong {
+					display: flex;
+					justify-content: flex-end;
+				}
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				width: 100% !important;
+				margin-bottom: 20px;
+			}
+		}
+		td:nth-of-type(2) {
+			align-self: flex-end;
+			div {
+				display: flex;
+				justify-content: flex-start;
+			}
+		}*/
+	}
+	tr.kosten {
+		flex-direction: column;
+		td {
+			margin: 0;
+			justify-content: space-between;
+			align-items: flex-start;
+			width: 100% !important;
+			flex-direction: row;
+			div {
+				justify-content: left;
+				width: calc(100% - 20px);
+				@media screen and (max-width: $breakpoint-md) {
+					margin: 0 20px;
+					width: calc(100% - 40px) !important;
+				}
+				@media screen and (max-width: $breakpoint-sm) {
+					margin: 0 10px;
+				}
+				p {
+					justify-content: left;
+					text-align: left;
+				}
+			}
+			div:nth-child(odd) {
+				width: calc(30% - 20px);
+				justify-content: flex-end;
+				p {
+					justify-content: flex-end;
+				}
+			}
+			div:nth-child(even) {
+				width: calc(70% - 20px);
+			}
+		}
+	}
+	tr:last-of-type {
+		border-bottom: #CBBB9F 1px solid;
+	}
+}
+.course_table {
+	display: flex;
+	justify-content: center;
+	border-style: none;
+	tr {
+		padding: 10px;
+		border-top: #CBBB9F 1px solid;
+		display: flex;
+		justify-content: space-between;
+		td {
+			border-style: none; // padding: 0 33px;
+			display: flex;
+			flex-direction: column;
+			p {
+				font-size: 22px;
+				justify-content: flex-end;
+				strong {
+					justify-content: flex-end;
+					display: flex;
+				}
+			}
+			@media screen and (max-width: $breakpoint-sm) {
+				padding: 0;
+			}
+		}
+		td:nth-child(even) {
+			width: calc(75% - 20px) !important;
+			padding-left: 0;
+			p {
+				justify-content: flex-start;
+				strong {
+					justify-content: flex-start;
+					display: flex;
+				}
+			}
+		}
+		td:nth-of-type(1) {
+			display: flex;
+			align-items: flex-end; // width:30%;
+			width: calc(25% - 5px) !important;
+			p {
+				font-size: 22px;
+				display: flex;
+				justify-content: flex-end;
+			}
+			div {
+				display: flex;
+				justify-content: flex-end;
+			}
+			@media screen and (max-width: $breakpoint-md) {
+				align-items: flex-start;
+			} // @media screen and (max-width: $breakpoint-sm){
+			// 	width:45%;
+			// }
+		}
+		td:nth-of-type(2) {
+			align-self: flex-end;
+			div {
+				display: flex;
+				justify-content: flex-start;
+			}
+		}
+	}
+	tr:last-of-type {
+		border-bottom: #CBBB9F 1px solid;
+	}
+}
+.lernziele {
+	max-width: unset;
+	.container {
+		max-width: 1550px;
+		margin: 0 auto;
+		h2 {}
+		.list_container {
+			justify-content: center;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			@media screen and (max-width: $breakpoint-md) {
+				flex-direction: column;
+				width: 100%;
+				margin: 0 auto;
+			}
+			ul {
+				width: 100%;
+				columns: 2;
+				-webkit-columns: 2;
+				-moz-columns: 2;
+				@media screen and (max-width: $breakpoint-md) {
+					flex-direction: column;
+					width: 100% !important;
+					margin: 0 auto;
+					display: flex;
+				}
+				li {
+					list-style-type: disc;
+					line-height: 1.8em;
+					display: list-item;
+					justify-content: center;
+					color: #634E42;
+					font-size: 1.3em;
+					margin: 0px 50px;
+					@media screen and (max-width: $breakpoint-md) {
+						margin: 7px 50px;
+						flex-basis: 100%;
+					}
+					p {
+						text-align: left;
+						justify-content: flex-start;
+					}
+				}
+			}
+		}
+	}
+}
+.leitung {
+	padding-bottom: 0;
+	.kursleitung_bio {
+		@media screen and (max-width: $breakpoint-sm) {
+			min-height: 800px;
+		}
+		.row_article {
+			justify-content: center;
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			@media screen and (max-width: $breakpoint-xl) {
+				justify-content: center;
+				width: 100%;
+				margin: 0 auto;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			div.img {
+				background: url(/assets/cache/800/800/media/img/bild7.jpg);
+				min-height: 100px;
+				/* width: 100%; */
+				/* background-attachment: initial; */
+				background-position: top !important;
+				max-width: 563px;
+				background-repeat: no-repeat !important;
+				background-size: cover !important;
+				width: calc(100% - 20px);
+				@media screen and (max-width: $breakpoint-xl) {
+					max-width: 1082px;
+					/*max-width: 100%;*/
+					width: 100%;
+					min-height: 419px;
+				}
+			}
+			.article {
+				padding: 20px 85px 60px 85px;
+				max-width: 1082px;
+				width: calc(100% - 20px);
+				min-height: 700px;
+				@media screen and (max-width: $breakpoint-xl) {
+					// padding:0 35px 35px;
+					width:100%;
+					padding: 0 10% 30px;
+					padding-top: 20px;
+				}
+				h3 {
+					font-size: 2em;
+					display: flex;
+					justify-content: center;
+					margin-bottom: 10px;
+				}
+			}
+		}
+	}
+}

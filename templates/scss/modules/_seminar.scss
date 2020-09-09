@@ -1,0 +1,48 @@
+.seminar{
+    padding-top:0;
+    max-width:unset;
+    margin-bottom:100px;
+    @media screen and (max-width: $breakpoint-sm) {
+		margin-bottom: 0;
+	}
+    .container{
+        margin-bottom: 40px;
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-bottom: 0;
+        }
+        
+        form.filter{
+            padding:70px 0;
+            .filter-header{
+                width: calc(100% - 40px);
+                margin: 0 auto;
+                h2{
+                    margin-bottom:25px;
+                }
+                .centered_btn{
+                    margin:0;
+                    display: flex;
+                    label{
+                        margin-right:3px;
+                        margin-left:3px;
+                        margin-bottom:0;
+                        margin-top:0;
+                        @media screen and (max-width: $breakpoint-md){
+                            width: calc(100% - 40px);
+                            margin: 10px auto;
+                        }
+                       
+                    }
+                    label.inside{
+                        color:white;
+                        background-color:$brown;
+                    }
+                    input.cat_input{
+                        position:absolute;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

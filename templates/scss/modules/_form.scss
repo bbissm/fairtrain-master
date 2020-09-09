@@ -1,0 +1,376 @@
+.kontakt{
+	background-color: $beige;
+	padding-bottom:85px !important;
+	max-width:unset;
+	.wrapper {
+		max-width: 600px;
+   	 	width: calc(100% - 40px);
+	  	list-style-type: none;
+	  	padding: 0;
+	  	border-radius: 3px;
+	  	// width:100%;
+	  	margin:0 auto;
+	  	@media screen and (max-width: $breakpoint-md){
+			width: auto;
+	  	}
+	  	.form-row{
+			display: flex;
+			justify-content: center;
+			align-items:baseline;
+			width: 85%;
+			@media screen and (max-width: $breakpoint-md){
+				flex-direction: column;
+				width: 100%;
+				align-items:center;
+			}
+			> label {
+				// flex: 1;
+				width:20%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				@media screen and (max-width: $breakpoint-md){
+					width:auto;
+				}
+				p{
+					font-size:17px;
+				}
+			}	
+  
+			input {
+				@media screen and (max-width: $breakpoint-md){
+					width: calc(100% - 40px);
+				}
+				flex: 2;
+				background-color: #F1EDE6;
+				border: 1px #634E42 solid;
+				margin: 5px 10px;
+				border-radius:3px;
+				padding: 7px 12px;
+				/*height: 50px;*/
+				font-size: 15px;
+				outline:0;
+				/*padding-left:15px;*/
+				// font-family: Semibold;
+				font-size: 17px;
+				color: #634E42;
+				&::placeholder {
+					color: #634E42 !important;
+					font-weight: lighter;
+				}
+
+			}
+		
+		
+			textarea{
+				@media screen and (max-width: $breakpoint-md){
+					width: calc(100% - 40px);
+				}
+				padding: 7px 12px;
+				border-radius:3px;
+				flex: 2;
+				background-color: #F1EDE6;
+				border: 1px #634E42 solid;
+				margin: 10px;
+				height: 100px;
+				font-size: 15px;
+				/*padding-left:15px;*/
+				// font-family: Semibold;
+				font-size: 17px;
+				resize: none;
+				&::placeholder {
+					color: #634E42 !important;
+					font-weight: lighter;
+				}
+			}
+			input[type="checkbox"]{
+				display:flex;
+				flex:unset;
+				-webkit-appearance: none;
+				padding: 7px;
+				border-radius: 50px;
+				display: inline-block;
+				position: relative;
+				height: auto;
+				@media screen and (max-width: $breakpoint-md){
+					width: unset;
+				}
+			}
+			input:checked{
+				background-color:#634E42;
+			}
+			label#radio_check{
+				cursor: pointer;
+				display: inline-block;
+				line-height: 50px;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background: red;
+			}
+		}
+		.form-row:last-of-type{
+			align-items:center;
+			flex-direction: row !important;
+		}
+	}
+	.centered_btn{
+
+	}
+}
+.anmeldung-form{
+    align-items: flex-start;
+	display:flex;
+	justify-content: center;
+	display: flex;
+    justify-content: center;
+	max-width: 1014px;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+	flex-wrap:wrap;
+	.form-side{
+		display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    width: 50%;
+	    @media screen and (max-width: $breakpoint-md) {
+	    	width:100%;
+	    	margin-bottom:20px;
+	    }
+		.wrapper{
+		 	margin: 0 10px;
+		 	display:flex;
+		 	flex-direction:column;
+		 	align-items: flex-end;
+		 	.form-row{
+		 		width: 100%;
+    			display: flex;
+    			margin: 3px 0;
+    			@media screen and (max-width: $breakpoint-md){
+			 		flex-direction:column;
+			 	} 
+    			>div{
+    				label{
+    					color:#8e8e8e;
+	    				width:100%;
+	    				margin-left: 10px; 
+	    				p{
+	    					font-size: 1em;
+	    					justify-content: flex-end;
+	    					@media screen and (max-width: $breakpoint-md){
+						 		justify-content: center;
+						 	} 
+	    				}
+	    			}
+	    			input,textarea{
+	    				border-radius: 6px;
+	    				border: 1px #634E42 solid;
+	    				width:60%;
+	    				padding: 10px;
+	    				@media screen and (max-width: $breakpoint-md){
+					 		width:100%;
+					 	} 
+	    			}
+	    			textarea{
+						background-color: white;
+					    height: 150px;
+					    padding: 5px;
+					    border-radius: 3px;
+					    border: 1px #634E42 solid;
+					    margin: 10px;
+	    			}
+    			}
+    			> label{
+    				width:40%;
+    				margin-right: 10px;
+    				display:flex;
+    				align-items:center;
+    				font-size: 0.8em;
+    				justify-content: flex-end;
+    				@media screen and (max-width: $breakpoint-md){
+				 		width:100%;
+				 		justify-content: flex-start;
+				 	} 
+    				p{
+    					font-size: 1em;
+    					justify-content: flex-end;
+    					@media screen and (max-width: $breakpoint-md){
+					 		justify-content:center;
+					 	} 
+    				}
+    			}
+    			input,textarea{
+    				border-radius: 6px;
+    				border: 1px #634E42 solid;
+    				width:60%;
+    				padding: 10px;
+    				@media screen and (max-width: $breakpoint-md){
+				 		width:100%;
+				 	}
+				 	font-size: 1em;
+    			}
+    			textarea{
+    				background-color: white;
+				    height: 150px;
+				    padding: 5px;
+				    border-radius: 3px;
+				    border: 1px #634E42 solid;
+    			}
+		 	}
+
+		 	.inline{
+		 		@media screen and (max-width: $breakpoint-md){
+			 		flex-direction:column;
+			 	} 
+		 		div{
+		 			width: 60%;
+				    display: flex;
+				    justify-content: space-between;
+				    @media screen and (max-width: $breakpoint-md){
+				 		width:100%;
+				 	} 
+		 			input{
+			 			width:32%;
+			 		}
+		 		}
+		 	}
+
+		 	.street{
+		 		@media screen and (max-width: $breakpoint-md){
+			 		flex-direction:column;
+			 	} 
+		 		>div{
+		 			display:flex;
+		 			width:60%;
+		 			justify-content:space-between;
+		 			@media screen and (max-width: $breakpoint-md){
+				 		width:100%;
+				 	} 
+		 			input:first-of-type{
+		 				width:79%;
+		 			}
+		 			input:last-of-type{
+		 				width:19%;
+		 			}
+		 		}
+		 	}
+		 	.plz{
+		 		
+		 		>div{
+		 			display:flex;
+		 			width:60%;
+		 			justify-content:space-between;
+		 			@media screen and (max-width: $breakpoint-md){
+				 		width:100%;
+				 	} 
+		 			input:first-of-type{
+		 				width:29%;
+		 			}
+		 			input:last-of-type{
+		 				width:69%;
+		 			}
+		 		}
+		 	}
+
+		 	.radio{
+		 		> div{
+		 			width:60%;
+		 			display:flex;
+		 			justify-content:space-between;
+		 			align-self:center;
+		 			@media screen and (max-width: $breakpoint-md){
+				 		width:100%;
+				 	} 
+		 			>div{
+		 			    display: flex;
+					    align-items: center;
+					    width: 50%;
+					    @media screen and (max-width: $breakpoint-md){
+					 		width:100%;
+					 	} 
+					    input[type="radio"]{
+					    	margin-right:10px;
+					    	margin:0;
+					        display:flex;
+					        flex:unset;
+					        -webkit-appearance: none;
+					        padding: 7px;
+					        border-radius: 50px;
+					        display: inline-block;
+					        position: relative;
+					        height: auto;
+					        height: 10px;
+		    				width: 10px;
+		    				@media screen and (max-width: $breakpoint-md){
+						 		margin-right:0;
+						 	} 
+					    }
+				      	input:checked{
+				        	background-color:#634E42;
+				      	}
+		 			}
+		 			
+		 		}
+		 	}
+
+		}
+	}
+	.form_bottom{
+		width: 100%;
+		div.form-row{
+			display: flex;
+			align-items:center;
+			justify-content:center;
+			@media screen and (max-width: $breakpoint-md){
+				 flex-direction:column;
+				 padding: 0 10px;
+		 	} 
+			label{
+
+			    display: flex;
+			    align-items: center;
+			    justify-content: flex-end;
+			    width:20%;
+			    @media screen and (max-width: $breakpoint-md){
+			 		width:100%;
+			 		justify-content:center;
+			 	} 
+			    p{
+			    	font-size: 1em;
+			    }
+			}
+			textarea{
+				font-size: 1em;
+				@media screen and (max-width: $breakpoint-md){
+					width:100%;
+				} 
+				width:80%;
+				background-color:white;
+				height:150px;
+				padding: 5px;
+			    border-radius: 3px;
+			    border: 1px #634E42 solid;
+			    margin: 10px;
+			}
+			input{
+				margin-right: 10px;
+			}
+		}
+		.flex{
+			flex-direction: row !important;
+		}
+		
+		
+		.centered{
+			width:100%;
+			>label{
+				width: unset !important;
+				cursor: pointer;
+				@media screen and (max-width: $breakpoint-md){
+					
+				} 
+			}
+		}
+	}
+
+}  

@@ -1,0 +1,33 @@
+<snippet>
+    <content>
+        <![CDATA[
+\$table = new table();
+    \$table->setup(
+        [
+            "form"=>
+            [
+                "method"=>"post",
+                "action"=>"/cp/async/$1/view",
+                "sqltable"=>"tbl_$2",
+                "sqlwhere"=>
+                [
+                    "$3_id"=>$_GET['edit']
+                ]
+            ],
+            "td"=>[120,0]
+        ]
+    );
+\$table->controller();
+\$table->addSubtitle(["cols"=>["Deutsch"]]);
+\$table->add(["cols"=>[translation::get("$4"),\$table->addFormField(["name"=>"$5","type"=>"$6","attr"=>["placeholder"=>"$7"]])]]);
+        
+// Speichern
+\$table->add(["cols"=>[translation::get("save"),\$table->addFormField(["name"=>"save","type"=>"submit","value"=>translation::get("save")])]]);
+echo \$table->render();
+]]>
+    </content>
+    <tabTrigger>
+        cms-table
+    </tabTrigger>
+    <!-- <scope>*.php</scope> -->
+</snippet>

@@ -1,0 +1,31 @@
+.impressionen_section{
+	max-width: 950px;
+	.container, .centered{
+		
+		> .impressionen {
+			display: flex;
+			flex-flow: row wrap;
+			// width: calc(100% - 36px);
+			margin: 40px 0;
+			justify-content: center;
+			@media screen and (max-width: $breakpoint-md){
+				width:100%;
+			}
+			img {
+				width: 200px;
+				height: 200px;
+				border: white 4px solid;
+				object-fit: cover;
+				@media screen and (max-width: $breakpoint-sm){
+					// width: 250px;
+					border:0;
+					margin-bottom:10px;
+					
+					width: 100%;
+    				height: auto;
+				}
+			}
+		}    
+	}  
+	
+}

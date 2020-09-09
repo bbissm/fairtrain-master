@@ -1,0 +1,22 @@
+
+.styled_ul{
+	display:flex;
+	flex-direction:column;
+	width: 50%;
+	margin: 0 auto;
+	@media screen and (max-width: $breakpoint-md){
+		width: 100%;
+	}
+	div{
+		align-items: baseline;
+		margin-bottom: 10px;
+		display:flex;
+	}
+	input{
+		align-self:center;
+		margin-right:10px !important;
+	}
+	li{
+
+	}
+}

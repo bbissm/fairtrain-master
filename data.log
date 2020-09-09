@@ -1,0 +1,1 @@
+SELECT date,time_from, time_to,constant FROM tbl_course_date WHERE course_fk='14' AND (date >= CURDATE() OR constant=1) ORDER BY date ASC

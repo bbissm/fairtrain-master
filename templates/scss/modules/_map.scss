@@ -1,0 +1,27 @@
+#map {
+    text-decoration:none;
+	position:relative;
+	height:600px;
+	.over-map{
+		width:100%;
+		position:absolute;
+		height:100%;
+		background-color: rgba(211,211,211,0.7);
+		z-index: 999;
+	}
+}
+#map span {
+    display:none;
+}
+#map:hover span {
+	z-index:999999;
+    display:block;
+    position:fixed;
+	overflow:hidden;
+	background-color:rgba(99, 78, 66,0.8);
+	padding:5px;
+
+	p{
+		color:white;
+	}
+}
